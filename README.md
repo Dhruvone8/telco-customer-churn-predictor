@@ -2,9 +2,6 @@
 
 A machine learning web app that predicts whether a telecom customer 
 will churn and explains **why** using SHAP explainability.
-
-🔗 **[Live Demo](your-hf-spaces-link-here)**
-
 ---
 
 ## 📊 Project Overview
