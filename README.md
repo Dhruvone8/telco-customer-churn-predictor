@@ -1,9 +1,9 @@
 # 📡 Telco Customer Churn Predictor
 
-A machine learning web app that predicts whether a telecom customer 
+A machine learning web app that predicts whether a telecom customer
 will churn and explains **why** using SHAP explainability.
 
-🔗 **[Live Demo](your-hf-spaces-link-here)**
+🔗 **[Live Demo](https://huggingface.co/spaces/DhruvHF/Telcom-Churn-Predictor)**
 
 ---
 
@@ -32,13 +32,13 @@ will churn and explains **why** using SHAP explainability.
 
 ## 🔍 Key Findings from SHAP Analysis
 
-1. **Contract type** is the strongest churn predictor — month-to-month 
+1. **Contract type** is the strongest churn predictor — month-to-month
    customers are at highest risk
-2. **Having dependents** is the most protective factor — families 
+2. **Having dependents** is the most protective factor — families
    are far more loyal customers
 3. **Short tenure** customers are significantly more likely to churn
 4. **Fiber optic** internet customers churn more despite paying premium prices
-5. **Practical services** (Security, Tech Support) retain customers far 
+5. **Practical services** (Security, Tech Support) retain customers far
    better than entertainment add-ons (Streaming TV/Movies)
 
 ---
@@ -49,6 +49,7 @@ will churn and explains **why** using SHAP explainability.
 ├── app/
 │   └── app.py              # Streamlit app — UI only
 ├── src/
+│   ├── __init__.py
 │   ├── preprocess.py       # Feature engineering & encoding
 │   ├── train.py            # XGBoost training pipeline
 │   └── explain.py          # SHAP explainability layer
@@ -67,7 +68,7 @@ will churn and explains **why** using SHAP explainability.
 
 ```bash
 # Clone the repo
-git clone https://github.com/yourusername/telco-churn-predictor
+git clone https://github.com/Dhruvone8/telco-customer-churn-predictor
 
 # Create virtual environment
 python -m venv venv
@@ -94,10 +95,10 @@ streamlit run app/app.py
 
 ## 💡 What Makes This Project Different
 
-- **SHAP explanations translated to plain English** — business 
+- **SHAP explanations translated to plain English** — business
   stakeholders can understand predictions without ML knowledge
-- **Separation of concerns** — preprocessing, training, and 
+- **Separation of concerns** — preprocessing, training, and
   explainability are fully modular in `src/`
-- **Honest evaluation** — GridSearch with 540 fits confirmed the 
-  baseline model was already near-optimal, demonstrating that 
+- **Honest evaluation** — GridSearch with 540 fits confirmed the
+  baseline model was already near-optimal, demonstrating that
   more complexity doesn't always yield better results
