@@ -1,5 +1,14 @@
-# 📡 Telco Customer Churn Predictor
+---
+title: Telcom Churn Predictor
+emoji: 📡
+colorFrom: blue
+colorTo: green
+sdk: streamlit
+app_file: app/app.py
+pinned: false
+---
 
+# 📡 Telco Customer Churn Predictor
 A machine learning web app that predicts whether a telecom customer
 will churn and explains **why** using SHAP explainability.
 ---
